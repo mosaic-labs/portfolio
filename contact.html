@@ -7,7 +7,7 @@
 
     <title>Mosaic Labs - Stress free software.</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
@@ -19,34 +19,46 @@
     <![endif]-->
   </head>
   <body>
-      <div class="contact-grid-container">
-          <div class="top">
-            <button class="contact_button">
-              <a href="./index.html"> Close </a>
-            </button>
-            <h4> Or email us at <u>hello@mosaiclabs.co</u></h4>
-          </div>
+
+
+      <div class="grid-container">
+          <div class="main"></div>
+          <div class="tl"></div>
+          <div class="tc"></div>
+          <div class="tr"></div>
           <div class="left"></div>
           <div class="right"></div>
+          <div class="bottom"></div>
+        </div>
+
+
+      <div class="contact-grid-container">
+          <div class="tc d-flex flex-column">
+            <button class="text-center col-sm-2 btn-sm btn-primary d-flex justify-content-start">
+              <a class="text-center" href="./index.html"> Close </a>
+            </button>
+            <h4 class="text-left"> Or email us at <u>hello@mosaiclabs.co</u></h4>
+          </div>
+          <!-- <div class="left"></div> -->
+          <!-- <div class="right"></div> -->
           <div class="main">
-            <div>
-              <input placeholder="Your Name" />
-              <input placeholder="Your Email" />
-            </div>
-            <div>
-              <input class="contact_message" placeholder="Your Message" />
-            </div>
-            <div>
-              <button class="contact_button">
-                <a>
-                  Send Message
-                </a>
-              </button>
+            <form>
+              <div class="input-group mb-3 flex-row">
+                <input class="form-control col mr-1" placeholder="Your Name"/>
+                <input class="form-control col ml-1" placeholder="Your Email"/>
+              </div>
+              <div class="input-group form-group">
+                <textarea rows="10" class="w-100 form-control" placeholder="Your Message"></textarea>
+              </div>
+              <div class="input-group d-flex justify-content-end">
+                <button class="btn btn-md primary"><a>Send Message</a></button>
+              </div>
+            </form>
             </div>
           </div>
         </div>
     <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -7,12 +7,8 @@ body {
     line-height: 45px;
     text-align: center;
 }
-button {
-    font-family: Helvetica;
-    border-radius: 10px;
-    font-size: 18px;
-    width: 150px;
-    margin-top: 50px;
+input, button {
+    outline: none;
 }
 h3 {
     font-family: Helvetica;
@@ -44,16 +40,41 @@ a:hover {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "top top top top" "left main main right" "left main main right";
   }
-  .contact-grid-container {
+.contact-grid-container {
     height: 100%;
     width: 100%;
-    font-family: Poppins;
+    font-family: 'Poppins';
     color: #FFF;
     background: #F2F2F2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "top top top top" "left main main right" "left main main right";
+    grid-template-areas: "tl tc tc tr" "left main main right" "left main main right" "left bottom bottom right";
+}
+
+.main {
+    grid-area: main;
+    box-sizing: border-box;
+}
+
+.tl { grid-area: tl; }
+
+.tc { grid-area: tc; }
+
+.tr { grid-area: tr; }
+
+.left { grid-area: left; } 
+
+.right { grid-area: right; }
+
+.bottom { grid-area: bottom; }
+
+.primary {
+    background: #FFF;
+    border-color: #6D58EF;
+}
+.primary a {
+    color: #6D58EF;
 }
 .contact-grid-container h4 {
     color: black;
@@ -61,25 +82,13 @@ a:hover {
 .contact_message {
     width: 100%;
 }
-.contact_button {
+.contact_button_msg {
+    width: 256px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
     border-color: #6D58EF;
 }
 .contact_button a {
     color: #6D58EF;
-}
-
-.top {
-    grid-area: top;
-}
-
-.left {
-    grid-area: left;
-}
-
-.right {
-    grid-area: right;
-}
-
-.main {
-    grid-area: main;
 }
