@@ -10,10 +10,17 @@ body {
 input, button {
     outline: none;
 }
-h3 {
+/* Reusable */
+.txt-primary {
+    color: #6D58EF;
+}
+.form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+} 
+h6 {
+    color: black;
     font-family: Helvetica;
-    font-size: 25px;
-    line-height: 45px;
 }
 .landing_header {
     font-family: 'Poppins';
@@ -73,12 +80,21 @@ a:hover {
     background: #FFF;
     border-color: #6D58EF;
 }
+.close {
+    width: 75px;
+}
+.btn:hover {
+    background: #6D58EF;
+    color: white;
+}
+.transparent {
+    color: #6D58EF;
+    background: transparent;
+}
 .primary a {
     color: #6D58EF;
 }
-.contact-grid-container h4 {
-    color: black;
-}
+
 .contact_message {
     width: 100%;
 }
