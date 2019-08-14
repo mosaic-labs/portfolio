@@ -10,6 +10,20 @@ body {
 input, button {
     outline: none;
 }
+
+.heading-1 {
+    font-size: 36px;
+    font-family: Helvetica;
+}
+.heading-2 {
+    font-size: 28px;
+    font-family: Helvetica;
+}
+.heading-3 {
+    font-size: 24px;
+    font-family: Helvetica;
+}
+
 /* Reusable */
 .txt-primary {
     color: #6D58EF;
@@ -46,7 +60,7 @@ a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "top top top top" "left main main right" "left main main right";
-  }
+}
 .contact-grid-container {
     height: 100%;
     width: 100%;
