@@ -2,7 +2,7 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: #1E242B;
-    font-family: 'Poppins', Helvetica;
+    font-family: Helvetica;
     font-size: 24px;
     line-height: 45px;
     text-align: center;
@@ -31,13 +31,13 @@ input, button {
 .form-control:focus {
     border-color: #28a745;
     box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
-} 
+}
 h6 {
     color: black;
     font-family: Helvetica;
 }
 .landing_header {
-    font-family: 'Poppins';
+    font-family: Poppins;
     font-style: normal;
     font-weight: bold;
     font-size: 45px;
@@ -54,7 +54,7 @@ a:hover {
 .landing-grid-container {
     height: 100%;
     width: 100%;
-    font-family: Poppins;
+    font-family: Helvetica;
     color: #FFF;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -64,7 +64,7 @@ a:hover {
 .contact-grid-container {
     height: 100%;
     width: 100%;
-    font-family: 'Poppins';
+    font-family: Helvetica;
     color: #FFF;
     background: #F2F2F2;
     display: grid;
