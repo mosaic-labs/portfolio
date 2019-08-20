@@ -23,11 +23,7 @@ html {
     font-weight: bold;
     font-family: Helvetica;
     margin-bottom:10vw;
-    color:#2e3742;
-}
-.background p:hover{
-    /* color:#425061; */
-    color:red;
+    color:#212933;
 }
 .row {
     margin-left: 0px;
