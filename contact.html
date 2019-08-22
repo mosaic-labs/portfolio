@@ -36,17 +36,18 @@
         .catch(function (error) {
           console.log(error);
         });
-
     }
   </script>
-  <div class="contact-container col-sm-12 d-flex col-md-12 h-100">
-    <div class="col-md-1"></div>
-    <div class="col-md-8 md-auto">
-      <div class="d-flex flex-column">
+
+  <div class="contact-container col-sm-12 d-flex">
+
+    <div class="w-75">
+
+      <div class="d-flex flex-column"> <!-- Content Above Form -->
         <button
           onclick="window.location.href='./index.html';"
           type="reset"
-          class="pull-left transparent btn btn-form btn-close primary"
+          class="pull-left transparent btn btn-close primary"
         >
           Close
         </button>
@@ -58,21 +59,23 @@
           </div>
         </div>
       </div>
-        <form id="contactForm" class="main" method="POST" >
-          <div class="form-group d-flex flex-xs-column">
-            <input class="form-control mr-2" type="text" name="name" placeholder="Your Name" />
-            <input class="form-control" type="email" name="email" placeholder="Your Email"/>
-          </div>
-          <div class-="input-group">
-            <textarea class="w-100 form-control" rows="8" name="message" placeholder="Your Message"></textarea>
-          </div>
-          <input type="text" name="_gotcha" style="display:none" />
-          <input type="hidden" name="_subject" value="Website contact" />
-          <input type="hidden" name="_next" value="localhost:8000" />
-          <button class="pull-right btn btn-form transparent primary mt-3" type="submit">Send Message</button>
-        </form>
+
+      <form id="contactForm" class="main" method="POST" >
+        <div class="form-group d-flex flex-xs-column">
+          <input class="form-control mr-2" type="text" name="name" placeholder="Your Name" />
+          <input class="form-control" type="email" name="email" placeholder="Your Email"/>
+        </div>
+        <div class-="input-group">
+          <textarea class="w-100 form-message form-control" name="message" placeholder="Your Message"></textarea>
+        </div>
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="hidden" name="_subject" value="Website contact" />
+        <input type="hidden" name="_next" value="localhost:8000" />
+        <button class="pull-right btn btn-form transparent primary mt-3" type="submit">Send Message</button>
+      </form>
+
     </div>
-        <div class="form-tips col-md-3">
+        <div class="form-tips ml-5">
           <p> Tip - Include these <br> things: </p>
           <ul>
             <li class="pull-left"> - Your Idea </li>
@@ -81,7 +84,10 @@
             <li class="pull-left"> - Where you heard about us </li>
           </ul>
         </div>
-    </div>
+        <button class="pull-right btn btn-form-post transparent primary mt-3" type="submit">Send Message</button>
+
+  </div>
+
   <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
   <script>
     var contactform = document.getElementById('contactForm');
