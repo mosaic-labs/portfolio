@@ -39,14 +39,14 @@
 
     }
   </script>
-  <div class="contact-container col-md-12 h-100">
+  <div class="contact-container d-flex col-md-12 h-100">
     <div class="col-md-1"></div>
-    <div class="w-100 col-md-10 md-auto">
+    <div class="col-md-8 md-auto">
       <div class="d-flex flex-column">
         <button
           onclick="window.location.href='./index.html';"
           type="reset"
-          class="pull-left transparent btn btn-close primary"
+          class="pull-left transparent btn btn-form btn-close primary"
         >
           Close
         </button>
@@ -72,7 +72,15 @@
           <button class="pull-right btn btn-form transparent primary mt-3" type="submit">Send Message</button>
         </form>
     </div>
-        <div class="col-md-1"></div>
+        <div class="form-tips col-md-3">
+          <p> Tip - Include these things: </p>
+          <ul>
+            <li class="pull-left"> - Your Idea </li>
+            <li class="pull-left"> - Your Timeline </li>
+            <li class="pull-left"> - Your Location </li>
+            <li class="pull-left"> - Where you heard about us </li>
+          </ul>
+        </div>
     </div>
   <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
   <script>

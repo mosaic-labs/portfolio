@@ -125,8 +125,11 @@ a:hover {
     font-size: 30px;
     line-height: 40px;
 }
-.btn a:hover {
-    color: white;
+.btn:hover {
+    color: #FFFFFF;
+}
+.btn-form:hover {
+    color: #f9f9f9;
 }
 
 .transparent {
@@ -136,6 +139,26 @@ a:hover {
 
 .contact_message {
     width: 100%;
+}
+.form-tips {
+    margin-top: 185px;
+}
+.form-tips p {
+    font-style: normal;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #1E242B;
+}
+.form-tips ul {
+    font-size: 16px;
+    color: #8E9194;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.form-tips ul li {
+    font-size: 16px;
 }
 
 /* @media only screen and (max-width: 900px) {
