@@ -144,12 +144,15 @@ a:hover {
     margin-top: 185px;
 }
 .form-tips p {
+    text-align: left;
+    line-height: 40px;
     font-style: normal;
     font-family: Helvetica;
     font-weight: bold;
     color: #1E242B;
 }
 .form-tips ul {
+    padding-left: 0px;
     font-size: 16px;
     color: #8E9194;
     list-style: none;
@@ -158,6 +161,7 @@ a:hover {
     text-align: left;
 }
 .form-tips ul li {
+    line-height: 30px;
     font-size: 16px;
 }
 
