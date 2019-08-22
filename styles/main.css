@@ -173,6 +173,11 @@ a:hover {
 .btn-form-post {
     display: none;
 }
+.btn-us {
+    min-height: 50px;
+    width: 150px;
+    background-color: #FFFFFF;
+}
 .form-message {
     height: 350px !important;
 }
