@@ -208,7 +208,7 @@ a:hover {
         display: inline;
     }
     .form-message {
-        height: 200px;
+        height: 200px !important;
         /* height: 40%; */
     }
     .say-hi {
