@@ -86,6 +86,16 @@ textarea {
     white-space: nowrap;
     line-height: 90px;
 }
+.landing_copy {
+    padding: 0px 12px;
+}
+
+@media screen and (min-width: 400px) {
+    .landing_copy {
+        padding: 0px 20px; 
+    }
+}
+
 h6 { /* Or email us at... */
     color: black;
     font-family: Helvetica;
